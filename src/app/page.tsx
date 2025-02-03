@@ -18,7 +18,7 @@ export default function Home() {
 
       <Sidebar />
 
-      <div className="p-4 ml-72 min-h-screen">
+      <div className="p-4 ml-56 min-h-screen">
 
         <Modal open={modalOpen} onClose={() => {
           setModalOpen(false)
@@ -51,7 +51,21 @@ export default function Home() {
               type="twitter"
               link="https://x.com/cryptobeastreal/status/1886477220387991838"
             />
-            <XIcon />
+            <Card
+              title="Reels"
+              type="instagram"
+              link="https://www.instagram.com/reel/DDcSMrUTYtw/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
+            />
+            <Card
+              title="Reels"
+              type="instagram"
+              link="https://www.instagram.com/reel/DFYWTdVIvkc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            />
+            <Card
+              title="Reels"
+              type="instagram"
+              link="https://www.instagram.com/reel/DDcSMrUTYtw/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
+            />
           </div>
         </div>
       </div>
