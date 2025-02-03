@@ -3,7 +3,8 @@ import React, { ReactElement } from 'react'
 interface ButtonProps {
     varient: "primary" | "secondary";
     text: string;
-    startIcon: ReactElement
+    startIcon: ReactElement;
+    onClick?: () => void
 }
 
 const varientClasses = {
@@ -14,13 +15,13 @@ const varientClasses = {
 const defaultStyles = "px-4 font-medium py-2 rounded-l-lg flex items-center"
 
 
-export default function Button({ varient, text, startIcon }: ButtonProps) {
+export default function Button({ varient, text, startIcon, onClick }: ButtonProps) {
     return (
-        <div className={varientClasses[varient] + "" + defaultStyles}>
+        <button onClick={onClick } className={varientClasses[varient] + "" + defaultStyles}>
             <div className='pr-2 '>
                 {startIcon}
             </div>
             {text}
-        </div>
+        </button>
     )
 }
