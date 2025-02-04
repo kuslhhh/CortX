@@ -32,6 +32,26 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 12%)
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 1%, 74%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 1%, 74%);
+}
+
+
 @layer base {
   * {
     @apply border-border;
