@@ -1,6 +1,7 @@
 import CrossIcon from "../icons/crossIcon";
 import PlusIcon from "../icons/plusIcon";
-import Button from "./button";
+import Button from "../button";
+import { Input } from "./input";
 
 export default function Modal({ open, onClose }) {
 
@@ -15,8 +16,8 @@ export default function Modal({ open, onClose }) {
                             </div>
                         </div>
                         <div>
-                            <Input />
-                            <Input />
+                            <Input placeholder={"Title"} />
+                            <Input placeholder={"Link"} />
                         </div>
                         <div className="pt-5 flex justify-center">
                             <Button varient="primary" text="Add Brain" startIcon={<PlusIcon />} />
@@ -28,15 +29,3 @@ export default function Modal({ open, onClose }) {
     </div>
 }
 
-function Input({ onchange, placeholder }: { onChange: () => void }) {
-    return (
-        <div className="pt-5">
-            <input
-                type={"text"}
-                placeholder="{placeholder}"
-                className="px-4 py-2 rounded-l-lg  bg-[#a9a9a9] text-[#1a1a1a] placeholder:text-[#1a1a1a] border border-y-0 border-l-0 border-r-black "
-                onChange={onchange}
-            />
-        </div>
-    )
-}

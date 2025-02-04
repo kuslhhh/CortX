@@ -1,11 +1,11 @@
 "use client"
 
-import Dashboard from "@/pages/Dashboard";
+import SignUp from "../pages/signup";
 
 export default function Home() {
 
 
   return (
-    <Dashboard />
+    <SignUp />
   );
 }

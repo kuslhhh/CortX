@@ -2,8 +2,8 @@
 
 import PlusIcon from "@/components/icons/plusIcon";
 import ShareIcon from "@/components/icons/shareIcon";
-import Button from "@/components/ui/button";
-import Card from "@/components/ui/card";
+import Button from "@/components/button";
+import Card from "@/components/card";
 import Modal from "@/components/ui/modal";
 import Sidebar from "@/components/ui/sidebar";
 import { useState } from "react";
