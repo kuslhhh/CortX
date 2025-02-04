@@ -19,9 +19,7 @@ export default function Dashboard() {
 
             <div className="p-4 ml-56 min-h-screen">
 
-                <Modal open={modalOpen} onClose={() => {
-                    setModalOpen(false)
-                }} />
+                <Modal open={modalOpen} onClose={() => setModalOpen(false)} />
 
                 <div className="flex justify-end gap-2">
 

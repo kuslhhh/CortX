@@ -1,11 +1,11 @@
 "use client"
 
-import SignUp from "../pages/signup";
+import Dashboard from "@/components/dashboard";
+
+
 
 export default function Home() {
-
-
   return (
-    <SignUp />
+    <Dashboard />
   );
 }
